@@ -63,7 +63,7 @@ export class AppComponent {
       (this.minutes < 10 ? '0' + this.minutes : this.minutes) +
       ':' +
       (this.seconds < 10 ? '0' + this.seconds : this.seconds);
-    console.log(this.totalTime);
+
     this.openModal();
   }
   constructor(public matDialog: MatDialog, public datepipe: DatePipe) {}
