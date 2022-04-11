@@ -1,0 +1,15 @@
+.timely-container {
+  display: grid;
+}
+button {
+  justify-self: center;
+  width: 30%;
+}
+
+app-project-modal {
+  display: none;
+}
+
+h2 {
+  padding-left: 2rem;
+}

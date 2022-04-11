@@ -1,0 +1,24 @@
+<div id="modal-content-wrapper">
+  <header id="modal-header">
+    <h1 id="modal-title">Stop Timer</h1>
+    <button class="close" mat-button (click)="close()">X</button>
+  </header>
+  <form [formGroup]="form">
+    <mat-form-field appearance="standard">
+      <mat-label>Project Name</mat-label>
+      <input
+        matInput
+        placeholder="Enter name of the project"
+        formControlName="name"
+      />
+    </mat-form-field>
+    <button
+      mat-raised-button
+      id="modal-action-button"
+      (click)="stopTimer(form.value)"
+    >
+      Stop timer
+    </button>
+  </form>
+  <section id="modal-body"></section>
+</div>
