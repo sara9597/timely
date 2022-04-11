@@ -1,0 +1,52 @@
+<!-- <p (click)="Click()">
+  lalllalala
+</p> -->
+<div class="container">
+  <!-- <table mat-table [dataSource]="projectList" class="mat-elevation-z8">
+    <ng-container matColumnDef="project">
+      <th mat-header-cell *matHeaderCellDef>Project</th>
+      <td mat-cell *matCellDef="let projectList">
+        {{ projectList.projectName }}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="start">
+      <th mat-header-cell *matHeaderCellDef>Start</th>
+      <td mat-cell *matCellDef="let projectList">
+        {{ projectList.startTime }}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="end">
+      <th mat-header-cell *matHeaderCellDef>End</th>
+      <td mat-cell *matCellDef="let projectList">{{ projectList.endTime }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="duration">
+      <th mat-header-cell *matHeaderCellDef>Duration</th>
+      <td mat-cell *matCellDef="let projectList">
+        {{ projectList.totalTime }}
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr> -->
+  <table class="table table-striped table-bordered">
+    <thead>
+      <tr>
+        <th>Project</th>
+        <th>Start</th>
+        <th>Stop</th>
+        <th>Duration</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let project of projectList">
+        <td>{{ project.projectName }}</td>
+        <td>{{ project.startTime }}</td>
+        <td>{{ project.endTime }}</td>
+        <td>{{ project.totalTime }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

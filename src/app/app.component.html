@@ -1,0 +1,13 @@
+<div class="timely-container">
+  <h2>Timely</h2>
+
+  <button mat-raised-button (click)="startTimer()">
+    {{ play == true ? "Stop" : "Start" }}
+  </button>
+  <app-projects-table
+    *ngIf="projectList[0]"
+    [projectList]="[projectList]"
+  ></app-projects-table>
+</div>
+
+<!-- <app-projects-table *ngIf="product.description"></app-projects-table> -->
